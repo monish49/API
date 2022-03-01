@@ -1,0 +1,14 @@
+table,
+td {
+  border: 6px solid #cfa53496;
+}
+body {
+  background-color: beige;
+  /* align-items: center; */
+}
+table {
+  width: 900px;
+  background-color: aquamarine;
+  margin-left: 50px;
+  margin-top: 10px;
+}
