@@ -5,14 +5,16 @@
 // import Navbar from './Routing/Nav_bar';
 // import Carousel from './carousel/carousel';
 // import Footer from './Routing/footer';
-import Api from './Api/api'
+// import Api from './Api/api'
 // import BmiProj from './form/controled_method';
+import Ref_form from './form/forn_ref';
 import './App.css';  
 
 const App = ()=> {
   return (
     <div className="App">
-      <Api/>
+      <Ref_form/>
+      {/* <Api/> */}
       {/* <BmiProj/> */}
       {/* <Navbar/>
       <Routes>
