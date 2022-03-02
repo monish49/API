@@ -15,14 +15,9 @@ const Api=()=>{
 
     return(
     <div>
-        <h3>API</h3>
+        <h3>Application Programming Interface</h3>
         <h5>Properties of an object in table formate</h5>
-        {
-            list.map(({id,name,postId,email})=>
-            
-            <>
-            
-            <table cellSpacing="10" cellPadding="10">   
+        <table cellSpacing="10" cellPadding="10">   
             <tr>
                 <th>Id</th>
                 <th>Name</th>
@@ -30,15 +25,18 @@ const Api=()=>{
                 <th>Email</th>
                 
             </tr>
+        {
+            list.slice(0,9).map(({id,name,postId,email})=>
+            
             <tr>
                 <td>{id}</td>
                 <td>{name}</td>
                 <td>{postId}</td>
                 <td>{email}</td>
-            </tr>
+            </tr>)}
             </table>
-            </>
-            )}
+            
+            
     </div>
     )
 }

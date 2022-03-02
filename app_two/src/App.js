@@ -5,16 +5,18 @@
 // import Navbar from './Routing/Nav_bar';
 // import Carousel from './carousel/carousel';
 // import Footer from './Routing/footer';
-// import Api from './Api/api'
+import Api from './Api/api'
 // import BmiProj from './form/controled_method';
-import Ref_form from './form/forn_ref';
+// import Ref_form from './form/forn_ref';
 import './App.css';  
+// import Useeff from './form/useEffect';
 
 const App = ()=> {
   return (
     <div className="App">
-      <Ref_form/>
-      {/* <Api/> */}
+      {/* <Ref_form/> */}
+      {/* <Useeff/> */}
+      <Api/>
       {/* <BmiProj/> */}
       {/* <Navbar/>
       <Routes>
