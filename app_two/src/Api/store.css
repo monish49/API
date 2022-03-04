@@ -1,0 +1,33 @@
+* {
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: bisque;
+}
+
+.store {
+  /*article*/
+  /* width: 150px; */
+  background: #fff;
+  padding: 15px;
+  border-radius: 1rem;
+  /* width: 260px;
+  height: 300px; */
+}
+.wholepage {
+  /*section*/
+  width: 90vw;
+  max-width: 1170px;
+  margin: 20px;
+  display: grid;
+  gap: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .wholepage {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

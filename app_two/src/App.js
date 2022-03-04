@@ -5,18 +5,27 @@
 // import Navbar from './Routing/Nav_bar';
 // import Carousel from './carousel/carousel';
 // import Footer from './Routing/footer';
-import Api from './Api/api'
+// import Api from './Api/api'
+import Api_store from './Api/api_img'
 // import BmiProj from './form/controled_method';
 // import Ref_form from './form/forn_ref';
-import './App.css';  
 // import Useeff from './form/useEffect';
+// import Prac from './practise/practice'
+// import Reducermain from './Hooks/usereducer'
+import './App.css';  
+import Headers from './Api/headers';
+import Footers from './Api/footers';
+
 
 const App = ()=> {
   return (
     <div className="App">
       {/* <Ref_form/> */}
       {/* <Useeff/> */}
-      <Api/>
+      {/* <Api/> */}
+      <Headers/>
+      <Api_store/>
+      <Footers/>
       {/* <BmiProj/> */}
       {/* <Navbar/>
       <Routes>
@@ -26,6 +35,7 @@ const App = ()=> {
       </Routes>
       <Carousel/>
       <Footer/> */}
+      {/* <Reducermain/> */}
     </div>
   );
 }
