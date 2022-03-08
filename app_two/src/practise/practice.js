@@ -1,20 +1,22 @@
-import { useState,useEffect } from "react"
+import React,{useState} from 'react';
 
 const Prac=()=>{
     const[n,setn]=useState(0)
-    const z=0
-    
-    useEffect(()=>{
-        console.log('componentdidupdate')
-    },[n])
-    
+    const[i,seti]=useState(1)
+
+    const multiple=()=>{
+        return n*5
+        (console.log("hey there"))
+    }
 
     return(
         <div>
-            <p>{n}</p>
-            <button onClick={()=>setn(n+1)}>Increment</button>
-            <button onClick={()=>setn(n-1)}>Decrement</button>
-            <button onClick={()=>setn(z)}>Reset</button>
+            <p>Count + 2 : {n}</p>
+            <p> Item * 10 : {i}</p>
+           <p>{multiple}</p>
+            <button className='btn btn-warning' onClick={()=>setn(n+2)}>Increment</button>
+            <button className='btn btn-info' onClick={()=>seti(i*10)}>Item</button>
+           
         </div>
     )
 }
